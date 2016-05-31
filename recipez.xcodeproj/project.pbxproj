@@ -13,6 +13,9 @@
 		4E2558C81CFD317E00E69CA1 /* recipez.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E2558C61CFD317E00E69CA1 /* recipez.xcdatamodeld */; };
 		4E2558CA1CFD317E00E69CA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E2558C91CFD317E00E69CA1 /* Assets.xcassets */; };
 		4E2558CD1CFD317E00E69CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E2558CB1CFD317E00E69CA1 /* LaunchScreen.storyboard */; };
+		4E2558D91CFD38B000E69CA1 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2558D71CFD38B000E69CA1 /* Recipe+CoreDataProperties.swift */; };
+		4E2558DA1CFD38B000E69CA1 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2558D81CFD38B000E69CA1 /* Recipe.swift */; };
+		4E2558DC1CFD3A4500E69CA1 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2558DB1CFD3A4500E69CA1 /* RecipeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		4E2558C91CFD317E00E69CA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E2558CC1CFD317E00E69CA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E2558CE1CFD317E00E69CA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E2558D71CFD38B000E69CA1 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4E2558D81CFD38B000E69CA1 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
+		4E2558DB1CFD3A4500E69CA1 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		4E2558BE1CFD317E00E69CA1 /* recipez */ = {
 			isa = PBXGroup;
 			children = (
+				4E2558D61CFD385800E69CA1 /* Controller */,
+				4E2558D51CFD385200E69CA1 /* View */,
+				4E2558D41CFD384400E69CA1 /* Model */,
 				4E2558BF1CFD317E00E69CA1 /* AppDelegate.swift */,
-				4E2558C11CFD317E00E69CA1 /* ViewController.swift */,
-				4E2558C31CFD317E00E69CA1 /* Main.storyboard */,
 				4E2558C91CFD317E00E69CA1 /* Assets.xcassets */,
 				4E2558CB1CFD317E00E69CA1 /* LaunchScreen.storyboard */,
 				4E2558CE1CFD317E00E69CA1 /* Info.plist */,
 				4E2558C61CFD317E00E69CA1 /* recipez.xcdatamodeld */,
 			);
 			path = recipez;
+			sourceTree = "<group>";
+		};
+		4E2558D41CFD384400E69CA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E2558D71CFD38B000E69CA1 /* Recipe+CoreDataProperties.swift */,
+				4E2558D81CFD38B000E69CA1 /* Recipe.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4E2558D51CFD385200E69CA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E2558C31CFD317E00E69CA1 /* Main.storyboard */,
+				4E2558DB1CFD3A4500E69CA1 /* RecipeCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4E2558D61CFD385800E69CA1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4E2558C11CFD317E00E69CA1 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +173,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E2558C21CFD317E00E69CA1 /* ViewController.swift in Sources */,
+				4E2558D91CFD38B000E69CA1 /* Recipe+CoreDataProperties.swift in Sources */,
 				4E2558C01CFD317E00E69CA1 /* AppDelegate.swift in Sources */,
+				4E2558DC1CFD3A4500E69CA1 /* RecipeCell.swift in Sources */,
 				4E2558C81CFD317E00E69CA1 /* recipez.xcdatamodeld in Sources */,
+				4E2558DA1CFD38B000E69CA1 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
